@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Javascript Learning</title>
+    </head>
+
+    <body>
+        <h1 id="header">Hello World!</h1>
+        <input type="text" id="inp"/>
+        <button onclick="pressed()">Color</button>
+
+        <script type="text/javascript">
+            function pressed(){
+                var text = document.getElementById('inp').value;
+                document.getElementById('header').style.color = text
+            }
+        </script>
+    </body>
+</html>

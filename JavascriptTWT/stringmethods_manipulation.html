@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stringmethod_manipulation</title>
+</head>
+<body>
+    <h1 id="header">Type Something lowercase</h1>
+    <input type="text" id="inp">
+    <button onclick="pressed()">Click</button>
+    <p id="output">turn to lower case</p>
+
+    <h1 id="header">Type Something startswith</h1>
+    <input type="text" id="inp1">
+    <button onclick="pressed1()">Click</button>
+    <p id="output1">starts with</p>
+    <p id="output_starts">starts with</p>
+
+
+
+
+    <script>
+        function pressed() {
+            var text = document.getElementById("inp").value;
+            output.innerHTML = text.toUpperCase();
+            output.innerHTML = text.toLowerCase();
+        }
+        function pressed1() {
+            var text = document.getElementById("inp1").value;
+            output1.innerHTML = text.toUpperCase();
+            output1.innerHTML = text.toLowerCase();
+            output_starts.innerHTML = text.trim().startsWith("@"); // .length tells you how long the string is eg. console.log(text.length)
+            output_starts.innerHTML = "T/F: " + text.trim().startsWith("@")
+        }
+
+        // https://devdocs.io/javascript-string/ full list of string methods
+    </script> 
+</body>
+</html>

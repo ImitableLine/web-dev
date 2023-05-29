@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "../../.."
+	},
+	{
+		"path": "../../../../../../../Doug Class/angular"
+	},
+	{
+		"path": "../../../../../../../Doug Class/vue.js"
+	},
+	{
+		"path": "../../../../../../../Doug Class/Svelte"
+	},
+	{
+		"path": "../../../../../../../Doug Class/Emberjs"
+	},
+	{
+		"path": "../../../../../../../Doug Class/Mithriljs"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Mithriljs"
+  }
+}

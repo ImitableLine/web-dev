@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Javascript Learning</title>
+    </head>
+
+    <body>
+        <h1 id="header">Hello World!</h1>
+        <h1 id="header1">empty</h1>
+        <input type="text" id="inp"/>
+
+        <button onclick="red()">Redsss</button>
+        <button onclick="green()">Green</button>
+
+        <script type="text/javascript">
+            document.write("<h1>Hello JS!</h1>");
+            console.log('Hello World!');
+            console.warn('Hello World!!!!');
+            console.error('Hello World!!!!');
+            document.getElementById("header").innerHTML = "Text with Javascript";
+            document.write(document.getElementById("header").innerHTML)
+            document.getElementById("inp").value = "world";
+            console.log(document.getElementById("inp").value);
+            var x = 6;
+            console.log(x)
+            var name = "david";
+            x = 5;
+            y = 10;
+            var b = x >= y; // returns boolean value true or false
+            console.log(!true)
+            function add(){
+                console.log("add")
+            }
+            add()
+            function added(a, b){
+                return a + b;
+            }
+            var ad = added(x, y)
+            console.log(ad)
+
+            function red(){
+                document.getElementById('header').style.color='red'
+            }
+            function green(){
+                document.getElementById('header').style.color='green'
+
+
+            }
+            if (document.getElementById('header').style.color="green"){
+                document.getElementById('header').style.color='blue'
+
+            }
+        </script>
+    </body>
+</html>

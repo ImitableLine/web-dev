@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mutability</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        var x = 5 // immutable so doesent change.
+        var z = []
+        var s = z // also changes Z, S is a reference to z
+
+
+        function add5(num){
+            num += 5
+            console.log(num)
+        }
+
+        var x = 5
+        add5(x)
+        console.log(x)
+
+        function append5(arr) {
+            arr.push(5)
+            console.log(arr)
+        }
+
+        var x = [1,2,3,4]
+        append5(x)
+        console.log(x) // same as the function log, an array is mutable so it passes a reference and changes with it
+
+        // .slice() empty will copy to get around mutability
+    </script>
+    
+</body>
+</html>
